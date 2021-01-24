@@ -40,3 +40,4 @@ this is a Res to store all materials of MMD at TDTU
 - Thống kê số URLs xuất hiện trong các web pages.
 - Thống kê số lượt truy cập các URLs, ...
 
+Link code Ex: [CountingWord](https://colab.research.google.com/drive/15JAJkXYaqvzOjLugInsMIdsR8NNQX6fU?usp=sharing)
