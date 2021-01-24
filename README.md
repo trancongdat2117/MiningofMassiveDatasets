@@ -38,4 +38,4 @@ this is a Res to store all materials of MMD at TDTU
 - Thống kê số câu match với pattern trong các documents.
 - Thống kê số URLs xuất hiện trong các web pages.
 - Thống kê số lượt truy cập các URLs, ...
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.itnavi.com.vn%2Fmapreduce-nhung-uu-diem-va-cach-thuc-hoat-dong-cua-nen-tang-nay%2F&psig=AOvVaw0O9vqma57jIwxtdGDbHXuG&ust=1611561917941000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKCh39qOtO4CFQAAAAAdAAAAABAD">
+[Github](https://images.viblo.asia/371995ad-cac3-4060-b7c3-c93c596a569d.jpg)
