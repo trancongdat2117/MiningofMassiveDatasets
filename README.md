@@ -38,4 +38,4 @@ this is a Res to store all materials of MMD at TDTU
 - Thống kê số câu match với pattern trong các documents.
 - Thống kê số URLs xuất hiện trong các web pages.
 - Thống kê số lượt truy cập các URLs, ...
-[Github](https://images.viblo.asia/371995ad-cac3-4060-b7c3-c93c596a569d.jpg)
+<img src="https://images.viblo.asia/371995ad-cac3-4060-b7c3-c93c596a569d.jpg">
