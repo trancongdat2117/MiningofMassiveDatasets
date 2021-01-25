@@ -1,7 +1,9 @@
 # MiningofMassiveDatasets
 This is all marterial of MMD subject at Ton Duc Thang University.
+
 Reference: 
 - [SparkByEX](https://sparkbyexamples.com/)
+- [SparkDocs](https://spark.apache.org/docs/latest/api/python/index.html)
 # 1. Tìm hiểu về Spark ?
 ## 1.1 Giới thiệu: 
 - Là một framework để xử lý dữ liệu
