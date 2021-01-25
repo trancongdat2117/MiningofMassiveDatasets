@@ -10,6 +10,8 @@ References:
 - Cung cấp các APIs cho Scala, Java, Python.
 - Được xây dựng bằng ngôn ngữ Scala.
 - Tốc độ nhanh hơn Mapreduce từ 10 ~ 100 lần
+
+<img src="https://static.javatpoint.com/tutorial/pyspark/images/pyspark-rdd2.png">
 ## 1.2 Đặc trưng:
 - Fast processing: xử lí nhanh
 - In-memory computation: tính toán trên RAM
