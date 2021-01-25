@@ -5,7 +5,6 @@ References:
 - [SparkByEX](https://sparkbyexamples.com/)
 - [SparkDocs](https://spark.apache.org/docs/latest/api/python/index.html)
 # 1. Tìm hiểu về Spark ?
-<img src = "https://miro.medium.com/max/800/1*nPcdyVwgcuEZiEZiRqApug.jpeg">
 ## 1.1 Giới thiệu: 
 - Là một framework để xử lý dữ liệu
 - Cung cấp các APIs cho Scala, Java, Python.
