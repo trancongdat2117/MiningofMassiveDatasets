@@ -1,5 +1,7 @@
 # MiningofMassiveDatasets
-this is a Res to store all materials of MMD at TDTU
+This is all marterial of MMD subject at Ton Duc Thang University.
+Reference: 
+- [SparkByEX](https://sparkbyexamples.com/)
 # 1. Tìm hiểu về Spark ?
 ## 1.1 Giới thiệu: 
 - Là một framework để xử lý dữ liệu
