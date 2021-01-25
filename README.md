@@ -1,5 +1,5 @@
 # MiningofMassiveDatasets
-This is all marterial of MMD subject at Ton Duc Thang University.
+This is all materials of MMD subject at Ton Duc Thang University.
 
 References: 
 - [SparkByEX](https://sparkbyexamples.com/)
