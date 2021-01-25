@@ -11,7 +11,7 @@ References:
 - Được xây dựng bằng ngôn ngữ Scala.
 - Tốc độ nhanh hơn Mapreduce từ 10 ~ 100 lần
 
-<img src="https://static.javatpoint.com/tutorial/pyspark/images/pyspark-rdd2.png">
+<img src="https://static.javatpoint.com/tutorial/pyspark/images/pyspark-rdd2.png" width="450" >
 ## 1.2 Đặc trưng:
 - Fast processing: xử lí nhanh
 - In-memory computation: tính toán trên RAM
@@ -35,7 +35,7 @@ References:
   + Hàm Map : Các xử lý một cặp (key, value) để sinh ra một cặp (keyI, valueI) - key và value trung gian. Dữ liệu này input vào hàm Reduce
   + Hàm Reduce : Tiếp nhận các (keyI, valueI) và trộn các cặp (keyI, valueI) trung gian , lấy ra các valueI có cùng keyI
   + Ngoài ra, Hàm Group by key: Sort and shuffle - Hệ thống sắp xếp tất cả các cặp khóa-giá trị theo khóa và xuất ra các cặp khóa(danh sách các giá trị)
-  <img src="https://images.viblo.asia/371995ad-cac3-4060-b7c3-c93c596a569d.jpg">
+  <img src="https://images.viblo.asia/371995ad-cac3-4060-b7c3-c93c596a569d.jpg" width="450">
 ## 2.2 Đặc trưng:
 - MapReduce có khả năng xử lý dễ dàng mọi bài toán có lượng dữ liệu lớn nhờ khả năng tác vụ phân tích và tính toán phức tạp
 - Mapreduce có khả năng chạy song song trên các máy có sự phân tán  khác nhau. Với khả năng hoạt động độc lập kết hợp  phân tán, xử lý các lỗi kỹ thuật để mang lại nhiều hiệu quả cho toàn hệ thống. 
