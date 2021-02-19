@@ -15,6 +15,7 @@ References:
 <p align="center">
 <img src="https://static.javatpoint.com/tutorial/pyspark/images/pyspark-rdd2.png" width="460" height="300">
  </p>
+ 
 ## 1.2 Đặc trưng:
 - Fast processing: xử lí nhanh
 - In-memory computation: tính toán trên RAM
