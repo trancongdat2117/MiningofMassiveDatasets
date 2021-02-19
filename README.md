@@ -110,10 +110,9 @@ application name), các cặp khóa thông qua phương thức set():
 - Là một tập dữ liệu đươc tổ chức thành cột, về cơ bản thì nó khá giống với cơ sở dữ liệu quan hệ mà chúng ta từng được học nhưng có điểm được tối ưu và phong phú hơn.DataFrames
 được xây dựng từ nhiều nguồn như structured data files, tables in Hive, external databases. API DataFrames được tích hợp sẳn trong Scala, Java, Python và R.
 - Tạo DataFrames:
-`df = spark.read.json("examples/src/main/resources/people.json")`
-
-    `df.show()`
+`df = spark.read.json("examples/src/main/resources/people.json")` `df.show()`
 - Thao tác với dữ liệu không kiểu:
+
 `df.printSchema()` : Print the schema in a tree format
 
 `df.select("name").show()` : Select only the "name" column
