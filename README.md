@@ -79,3 +79,10 @@ val sc = new SparkContext(conf)
   + Spark.driver.memory: số lượng memory được dùng trong quá trình xử lí.
   + Spark.executor.memory: dung lượng memory được dùng trong quá trình xử lí
 ## 3.2 Spark RDD (Resilient Distributed Datasets):
+- Là một cấu trúc dữ liệu cơ bản của Spark, là một tập hợp các đối tượng được phân bố một cách cố định. Mỗi tập dữ liệu trong RDD có thể chứa bất kỳ kiểu đối tượng nào của Scala, Python, Java or user-defined classes.
+- Lặp đi lặp lại trên Mapreduce : Việc sử dụng lại các kết quả nhiều lần tính toán trong các giai đoạn tính toán đã phát sinh chi phí đáng kể cho việc sao chép dữ liệu Disk I/O, và làm chậm hệ thống.
+<p align="center"> <img src="https://www.tutorialspoint.com/apache_spark/images/iterative_operations_on_mapreduce.jpg" > </p>
+- Hoạt động lặp trên Spark RDD: Việc lặp trên RDD sẽ lưu kết quả trung gian trong bộ nhớ phân tán thay vì IO Disk do vậy hệ thống sẽ nhanh hơn hẳn. Khi RAM hết bộ nhớ thì Data sẽ được lưu trên Disk
+<p align="center"> <img src="https://www.tutorialspoint.com/apache_spark/images/iterative_operations_on_spark_rdd.jpg" > </p>
+- Hoạt động tương tác trên Spark RDD: Các truy vấn khác nhau được chạy trên cùng 1 tập dữ liệu, dữ liệu được lưu trên memory nên có thời gian thực thi tốt hơn. 
+<p align="center"> <img src="https://www.tutorialspoint.com/apache_spark/images/interactive_operations_on_spark_rdd.jpg" > </p>
