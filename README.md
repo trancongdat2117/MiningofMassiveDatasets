@@ -68,5 +68,14 @@ application name), các cặp khóa thông qua phương thức set():
  .setAppName("CountingSheep") 
 val sc = new SparkContext(conf)
 `
-- Dynamically Loading Spark Properties : trong một vài trường hợp đặc biệt muốn tránh hard-coding trong SparkConf. Ví dụ bạn muốn chạy ứng dụng với các bản khác nhau hoặc khác memory thì bạn chỉ cần tạo 1 conf rỗng.
+- Dynamically Loading Spark Properties : trong một vài trường hợp đặc biệt muốn tránh hard-coding trong SparkConf. Ví dụ bạn muốn chạy ứng dụng với các bản khác nhau hoặc khác memory thì bạn chỉ cần tạo 1 conf rỗng. 
+
 `val sc = new SparkContext(new SparkConf())`
+
+- Viewving Spark Properties : là một nơi để kiểm tra đảm bảo rằng các thuộc tính của bạn đã được set chính xác, chỉ các giá trị chỉ định thông qua spark-defaults.conf, SparkConf hoặc commanđ lne mới xuất hiện. Đối với Web, thì các thuộc tính Spark được hiển thị trong tag Enviroment.
+- Application Properties:
+  + Spark.app.name: tên của ứng dụng sẽ xuất hiện trên UI và trong log data.
+  + Spark.driver.cores: chỉ có trong cluster mode, là số lượng core được dùng trong quá trình xử lí driver
+  + Spark.driver.memory: số lượng memory được dùng trong quá trình xử lí.
+  + Spark.executor.memory: dung lượng memory được dùng trong quá trình xử lí
+## 3.2 Spark RDD (Resilient Distributed Datasets):
