@@ -4,6 +4,8 @@ This is all materials of MMD subject at Ton Duc Thang University.
 References: 
 - [SparkByEX](https://sparkbyexamples.com/)
 - [SparkDocs](https://spark.apache.org/docs/latest/api/python/index.html)
+- [SparkApache](https://spark.apache.org/)
+- [Tutorialspoint](https://www.tutorialspoint.com/apache_spark/apache_spark_rdd.htm)
 # 1. Tìm hiểu về Spark ?
 ## 1.1 Giới thiệu: 
 - Là một framework để xử lý dữ liệu
@@ -102,3 +104,20 @@ application name), các cặp khóa thông qua phương thức set():
 `pairs = lines.map(lambda s: (s, 1))`
 
 `counts = pairs.reduceByKey(lambda a, b: a + b)`
+## 3.3 Spark DataFrames:
+- Là một tập dữ liệu đươc tổ chức thành cột, về cơ bản thì nó khá giống với cơ sở dữ liệu quan hệ mà chúng ta từng được học nhưng có điểm được tối ưu và phong phú hơn.DataFrames
+được xây dựng từ nhiều nguồn như structured data files, tables in Hive, external databases. API DataFrames được tích hợp sẳn trong Scala, Java, Python và R.
+- Tạo DataFrames:
+`df = spark.read.json("examples/src/main/resources/people.json")`
+
+`df.show()`
+- Thao tác với dữ liệu không kiểu:
+`df.printSchema()`: Print the schema in a tree format
+
+`df.select("name").show()`: Select only the "name" column
+
+`df.select(df['name'], df['age'] + 1).show()` : Select everybody, but increment the age by 1
+
+`df.filter(df['age'] > 21).show()` : Select people older than 21
+
+`df.groupBy("age").count().show()`: Count people by age
