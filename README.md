@@ -86,3 +86,18 @@ val sc = new SparkContext(conf)
 <p align="center"> <img src="https://www.tutorialspoint.com/apache_spark/images/iterative_operations_on_spark_rdd.jpg" > </p>
 - Hoạt động tương tác trên Spark RDD: Các truy vấn khác nhau được chạy trên cùng 1 tập dữ liệu, dữ liệu được lưu trên memory nên có thời gian thực thi tốt hơn. 
 <p align="center"> <img src="https://www.tutorialspoint.com/apache_spark/images/interactive_operations_on_spark_rdd.jpg" > </p>
+- Parallelized Collections : được tạo bằng paralleelize method của SparkContext trên 1 collection. Các thành phần trong collection có thể so chép để tạo thành một tập dư liệu phân tán và có thể hoạt động song song . Example :
+
+`data = [1, 2, 3, 4, 5]`
+
+`distData = sc.parallelize(data)`
+
+- External Datasets : PySpark cps thể tạo bộ dữ liệu phân tán bất kỳ từ các nguồn mà Hadoop hỗ trợ. Các RDD của tệp văn bản có thể được tạo bằng cách sử dụng phương thức textFile của SparkContext. Example: 
+`distFile = sc.textFile("data.txt")`
+- Làm việc với Key-Value Pairs: 
+
+`lines = sc.textFile("data.txt")`
+
+`pairs = lines.map(lambda s: (s, 1))`
+
+`counts = pairs.reduceByKey(lambda a, b: a + b)`
