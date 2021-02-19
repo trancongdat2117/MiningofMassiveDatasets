@@ -50,3 +50,23 @@ References:
 - Thống kê số lượt truy cập các URLs, ...
 
 Link code Ex: [CountingWord](https://colab.research.google.com/drive/15JAJkXYaqvzOjLugInsMIdsR8NNQX6fU?usp=sharing)
+
+# 3. Tìm hiểu về Spark (tiếp theo...):
+## 3.1 Spark properties (tính chất của Spark)
+- Spark cung cấp 3 thành phần để cấu hình hệ thống:
+  + Spark properties: control hầu hết các thông số (paramenters) bằng SparkConf Object
+or Java system properties
+  + Environment variables: được sử dụng để set-up cho từng máy ví dụ như địa chỉ IP,
+hoặc thông qua lệnh conf/spark-env.sh
+  + Logging: có thể cấu hình thông qua lệnh - log4j.properties
+- Với Spark properties ta có thể set một cách trực tiếp trên SparkConf được passed qua
+SparkContext. Với SparkConf cho phép bạn cấu hình một vài thuộc tính phổ biến (URL ,
+application name), các cặp khóa thông qua phương thức set():
+
+`val conf = new SparkConf()
+ .setMaster("local[2]") 
+ .setAppName("CountingSheep") 
+val sc = new SparkContext(conf)
+`
+- Dynamically Loading Spark Properties : trong một vài trường hợp đặc biệt muốn tránh hard-coding trong SparkConf. Ví dụ bạn muốn chạy ứng dụng với các bản khác nhau hoặc khác memory thì bạn chỉ cần tạo 1 conf rỗng.
+`val sc = new SparkContext(new SparkConf())`
