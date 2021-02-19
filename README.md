@@ -64,6 +64,8 @@ hoặc thông qua lệnh conf/spark-env.sh
 - Với Spark properties ta có thể set một cách trực tiếp trên SparkConf được passed qua
 SparkContext. Với SparkConf cho phép bạn cấu hình một vài thuộc tính phổ biến (URL ,
 application name), các cặp khóa thông qua phương thức set():
+
+
 `val conf = new SparkConf()`
 
 `.setMaster("local[2]")`
@@ -110,7 +112,7 @@ application name), các cặp khóa thông qua phương thức set():
 - Tạo DataFrames:
 `df = spark.read.json("examples/src/main/resources/people.json")`
 
-`df.show()`
+    `df.show()`
 - Thao tác với dữ liệu không kiểu:
 `df.printSchema()` : Print the schema in a tree format
 
