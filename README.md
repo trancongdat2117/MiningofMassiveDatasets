@@ -112,9 +112,9 @@ application name), các cặp khóa thông qua phương thức set():
 
 `df.show()`
 - Thao tác với dữ liệu không kiểu:
-`df.printSchema()`: Print the schema in a tree format
+`df.printSchema()` : Print the schema in a tree format
 
-`df.select("name").show()`: Select only the "name" column
+`df.select("name").show()` : Select only the "name" column
 
 `df.select(df['name'], df['age'] + 1).show()` : Select everybody, but increment the age by 1
 
