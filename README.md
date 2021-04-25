@@ -123,3 +123,6 @@ application name), các cặp khóa thông qua phương thức set():
 `df.filter(df['age'] > 21).show()` : Select people older than 21
 
 `df.groupBy("age").count().show()`: Count people by age
+
+# Machine leaning models on Spypard:
+
