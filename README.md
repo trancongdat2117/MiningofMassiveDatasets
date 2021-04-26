@@ -172,5 +172,6 @@ Link code Ex: [Code ví dụ minh họa](https://colab.research.google.com/drive
 + Chuẩn bị DataFrame 
 + Convert PySpark Dataframe to Pandas DataFrame
 
-Link code ex: [Ví dụ minh học](https://colab.research.google.com/drive/1SEtpj5IMui9KAZwfQJOMPPb_fMkaT2-8?usp=sharing)
+Link code ex: [Ví dụ minh họa](https://colab.research.google.com/drive/1SEtpj5IMui9KAZwfQJOMPPb_fMkaT2-8?usp=sharing)
 
+Ngoài ra còn rất nhiều methods để có thể tương tác DataFame, bạn có thể tham khảo [tại đây](https://github.com/spark-examples/pyspark-examples/blob/master/README.md)
