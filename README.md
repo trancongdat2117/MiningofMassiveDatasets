@@ -134,10 +134,8 @@ application name), các cặp khóa thông qua phương thức set():
 `Ví dụ`:
 - Tạo 1 Spark RDD:
 `spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()`
-
 `rdd = spark.sparkContext.parallelize(data)`
 
 - Dùng toDF():
 `dfFromRDD1 = rdd.toDF()`
-
 `dfFromRDD1.printSchema()`
