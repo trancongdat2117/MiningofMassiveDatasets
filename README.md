@@ -167,4 +167,10 @@ Ví dụ: DataFrame là một tập hợp dữ liệu phân tán được tổ c
 `deptDF.show(truncate=False)`
 
 Link code Ex: [Code ví dụ minh họa](https://colab.research.google.com/drive/1l-mjC5V9Zr_8VH-N5LdNU9tRJ1nd9g2-?usp=sharing)
+#### Convert PySpark DataFrame to Pandas
+- PySpark DataFrame có thể được chuyển đổi thành Python Pandas DataFrame bằng cách sử dụng hàm toPandas()
++ Chuẩn bị DataFrame 
++ Convert PySpark Dataframe to Pandas DataFrame
+
+Link code ex: [Ví dụ minh học](https://colab.research.google.com/drive/1SEtpj5IMui9KAZwfQJOMPPb_fMkaT2-8?usp=sharing)
 
