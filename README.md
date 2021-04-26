@@ -136,3 +136,7 @@ application name), các cặp khóa thông qua phương thức set():
 `spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()`
 
 `rdd = spark.sparkContext.parallelize(data)`
+
+- Dùng toDF():
+`dfFromRDD1 = rdd.toDF()
+dfFromRDD1.printSchema()`
