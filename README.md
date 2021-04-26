@@ -132,5 +132,5 @@ application name), các cặp khóa thông qua phương thức set():
 - Ngoài ra, PySpark DataFrame cũng có thể được tạo bằng cách đọc dữ liệu từ Cơ sở dữ liệu RDBMS và Cơ sở dữ liệu NoSQL.
 `Ví dụ`:
 - Tạo 1 Spark RDD:
-`spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
-rdd = spark.sparkContext.parallelize(data)`
+`spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()`
+`rdd = spark.sparkContext.parallelize(data)`
