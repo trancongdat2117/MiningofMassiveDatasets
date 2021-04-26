@@ -54,6 +54,7 @@ References:
 
 Link code Ex: [CountingWord](https://colab.research.google.com/drive/15JAJkXYaqvzOjLugInsMIdsR8NNQX6fU?usp=sharing)
 
+
 # 3. Tìm hiểu về Spark (tiếp theo...):
 ## 3.1 Spark properties (tính chất của Spark)
 - Spark cung cấp 3 thành phần để cấu hình hệ thống:
@@ -134,8 +135,36 @@ application name), các cặp khóa thông qua phương thức set():
 `Ví dụ`:
 - Tạo 1 Spark RDD:
 `spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()`
+
 `rdd = spark.sparkContext.parallelize(data)`
 
 - Dùng toDF():
 `dfFromRDD1 = rdd.toDF()`
 `dfFromRDD1.printSchema()`
+
+- Ví dụ với file TXT:
+`df2 = spark.read.text("/src/resources/file.txt")`
+
+## 5.2 Convert PySpark RDD to DataFrame:
+- Trong PySpark, hàm toDF () của RDD được sử dụng để chuyển RDD thành DataFrame. Chúng ta sẽ cần chuyển đổi RDD sang DataFrame vì DataFrame cung cấp nhiều lợi thế hơn RDD. 
+Ví dụ: DataFrame là một tập hợp dữ liệu phân tán được tổ chức thành các cột được đặt tên tương tự như bảng Cơ sở dữ liệu và cung cấp các cải tiến về hiệu suất và tối ưu hóa
+
+### Ví dụ:
+#### Tạo Spark RDD
+`from pyspark.sql import SparkSession`
+`spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()`
+`dept = [("Finance",10),("Marketing",20),("Sales",30),("IT",40)]`
+`rdd = spark.sparkContext.parallelize(dept`
+#### Convert PySpark RDD to DataFrame
+- Dùng rdd.toDF()
+`df = rdd.toDF()`
+`df.printSchema()`
+`df.show(truncate=False`
+
+- Spark Session cung cấp hàm createDataFrame() 
+`deptDF = spark.createDataFrame(rdd, schema = deptColumns)`
+`deptDF.printSchema()`
+`deptDF.show(truncate=False)`
+
+Link code Ex: [Code ví dụ minh họa](https://colab.research.google.com/drive/1l-mjC5V9Zr_8VH-N5LdNU9tRJ1nd9g2-?usp=sharing)
+
