@@ -6,6 +6,8 @@ References:
 - [SparkDocs](https://spark.apache.org/docs/latest/api/python/index.html)
 - [SparkApache](https://spark.apache.org/)
 - [Tutorialspoint](https://www.tutorialspoint.com/apache_spark/apache_spark_rdd.htm)
+- [github](https://github.com/spark-examples/pyspark-examples/)
+- [towardsdatascience](https://towardsdatascience.com/machine-learning-with-pyspark-and-mllib-solving-a-binary-classification-problem-96396065d2aa)
 # 1. Tìm hiểu về Spark ?
 ## 1.1 Giới thiệu: 
 - Là một framework để xử lý dữ liệu
