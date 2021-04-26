@@ -126,6 +126,13 @@ application name), các cặp khóa thông qua phương thức set():
 `df.groupBy("age").count().show()`: Count people by age
 
 # 4. Machine leaning models on PySpark:
+## 4.1 Kmean
+[Code](https://drive.google.com/file/d/1e92M1d_bLhxW20QotcVhg1IFPka8ssop/view?usp=sharing)
+## 4.2 Linear Regression
+[Code](https://drive.google.com/file/d/1bYMaV3Hl7NkgHQKzha7sUvolKB5oJNiS/view?usp=sharing)
+## 4.3 Random_Forests
+[Code](https://drive.google.com/file/d/1lAGjz3GCENhQs8WQDAUAYEXHt7Cn95dY/view?usp=sharing)
+
 # 5. PySpark DataFrame:
 ## 5.1 Create DataFrame:
 - Bạn có thể dùng toDF() hoặc createDataFrame(): cả hai hàm này đều lấy các signatures khác nhau để tạo DataFrame từ RDD, danh sách và DataFrame hiện có.
