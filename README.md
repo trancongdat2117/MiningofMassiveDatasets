@@ -124,5 +124,6 @@ application name), các cặp khóa thông qua phương thức set():
 
 `df.groupBy("age").count().show()`: Count people by age
 
-# 2. Machine leaning models on Spypard:
-
+# 2. Machine leaning models on PySpark:
+# 3. PySpark DataFrame:
+## 3.1 Create DataFrame:
