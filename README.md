@@ -136,8 +136,19 @@ application name), các cặp khóa thông qua phương thức set():
 
 [Code](https://drive.google.com/file/d/1e92M1d_bLhxW20QotcVhg1IFPka8ssop/view?usp=sharing)
 ## 4.2 Linear Regression
+- "Hồi quy tuyến tính" là một phương pháp thống kê để hồi quy dữ liệu với biến phụ thuộc có giá trị liên tục trong khi các biến độc lập có thể có một trong hai giá trị liên tục hoặc là giá trị phân loại. Nói cách khác "Hồi quy tuyến tính" là một phương pháp để dự đoán biến phụ thuộc (Y) dựa trên giá trị của biến độc lập (X). Nó có thể được sử dụng cho các trường hợp chúng ta muốn dự đoán một số lượng liên tục. Ví dụ, dự đoán giao thông ở một cửa hàng bán lẻ, dự đoán thời gian người dùng dừng lại một trang nào đó hoặc số trang đã truy cập vào một website nào đó v.v..
+
 [Code](https://drive.google.com/file/d/1bYMaV3Hl7NkgHQKzha7sUvolKB5oJNiS/view?usp=sharing)
 ## 4.3 Random_Forests
+- Random Forests là thuật toán học có giám sát (supervised learning). Nó có thể được sử dụng cho cả phân lớp và hồi quy. Nó cũng là thuật toán linh hoạt và dễ sử dụng nhất. Một khu rừng bao gồm cây cối. Người ta nói rằng càng có nhiều cây thì rừng càng mạnh. 
+- Random forests tạo ra cây quyết định trên các mẫu dữ liệu được chọn ngẫu nhiên, được dự đoán từ mỗi cây và chọn giải pháp tốt nhất bằng cách bỏ phiếu. Nó cũng cung cấp một chỉ báo khá tốt về tầm quan trọng của tính năng. Random forests có nhiều ứng dụng, chẳng hạn như công cụ đề xuất, phân loại hình ảnh và lựa chọn tính năng.
+- Nó có thể được sử dụng để phân loại các ứng viên cho vay trung thành, xác định hoạt động gian lận và dự đoán các bệnh. Nó nằm ở cơ sở của thuật toán Boruta, chọn các tính năng quan trọng trong tập dữ liệu
+- Cách hoạt động:
++ Chọn các mẫu ngẫu nhiên từ tập dữ liệu đã cho.
++ Thiết lập cây quyết định cho từng mẫu và nhận kết quả dự đoán từ mỗi quyết định cây.
++ Hãy bỏ phiếu cho mỗi kết quả dự đoán.
++ Chọn kết quả được dự đoán nhiều nhất là dự đoán cuối cùng.
+
 [Code](https://drive.google.com/file/d/1lAGjz3GCENhQs8WQDAUAYEXHt7Cn95dY/view?usp=sharing)
 
 # 5. PySpark DataFrame:
