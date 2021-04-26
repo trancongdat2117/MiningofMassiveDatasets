@@ -138,5 +138,6 @@ application name), các cặp khóa thông qua phương thức set():
 `rdd = spark.sparkContext.parallelize(data)`
 
 - Dùng toDF():
-`dfFromRDD1 = rdd.toDF()
-dfFromRDD1.printSchema()`
+`dfFromRDD1 = rdd.toDF()`
+
+`dfFromRDD1.printSchema()`
