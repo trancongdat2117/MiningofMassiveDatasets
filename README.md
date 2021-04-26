@@ -124,6 +124,9 @@ application name), các cặp khóa thông qua phương thức set():
 
 `df.groupBy("age").count().show()`: Count people by age
 
-# 2. Machine leaning models on PySpark:
-# 3. PySpark DataFrame:
-## 3.1 Create DataFrame:
+# 4. Machine leaning models on PySpark:
+# 5. PySpark DataFrame:
+## 5.1 Create DataFrame:
+- Bạn có thể dùng toDF() hoặc createDataFrame(): cả hai hàm này đều lấy các signatures khác nhau để tạo DataFrame từ RDD, danh sách và DataFrame hiện có.
+- Bạn cũng có thể tạo PySpark DataFrame từ các nguồn dữ liệu như TXT, CSV, JSON, ORV, Avro, Parquet, định dạng XML bằng cách đọc từ HDFS, S3...
+- Ngoài ra, PySpark DataFrame cũng có thể được tạo bằng cách đọc dữ liệu từ Cơ sở dữ liệu RDBMS và Cơ sở dữ liệu NoSQL.
