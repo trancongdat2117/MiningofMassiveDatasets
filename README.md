@@ -129,6 +129,11 @@ application name), các cặp khóa thông qua phương thức set():
 
 # 4. Machine leaning models on PySpark:
 ## 4.1 Kmean
+- `Clustering` là cách nhóm 1 tập hợp các objects dựa trên các đặc điểm, thuộc tính của chúng, tổng hợp chúng lại theo từng nhóm dựa trên ĐỘ GIỐNG NHAU (`similarities`).
+Liên quan đến data mining, phương pháp này  (clustering) phân chia data bằng 1 thuật toán join được chỉ định, thích hợp nhất cho các phân tích thông tin mong muốn.
+- Kmean nó là 1 thuật toán để phân nhóm 1 tập các object dựa trên các thuộc tính của chúng.
+- input: Cho n điểm. Mỗi điểm có dạng (x, y), k: số nhóm. k <= n
+- output: Danh sách k nhóm và các điểm của mỗi nhóm
 [Code](https://drive.google.com/file/d/1e92M1d_bLhxW20QotcVhg1IFPka8ssop/view?usp=sharing)
 ## 4.2 Linear Regression
 [Code](https://drive.google.com/file/d/1bYMaV3Hl7NkgHQKzha7sUvolKB5oJNiS/view?usp=sharing)
